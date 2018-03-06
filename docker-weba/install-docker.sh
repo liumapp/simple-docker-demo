@@ -1,6 +1,5 @@
 #!/bin/bash
 
-title=docker-weba
 PROJECT_NAME=docker-weba
 IMAGE_NAME=docker-weba
 
@@ -17,6 +16,8 @@ mvn clean install -DskipTests -pl ${PROJECT_NAME} -am
 docker stop ${IMAGE_NAME}
 docker rm ${IMAGE_NAME}
 docker rmi ${IMAGE_NAME}
+
+cd ${PROJECT_NAME}
 
 mvn package docker:build -DskipTests -DImageName=${IMAGE_NAME} -DExposePort=${CONTAINER_PORT}
 
