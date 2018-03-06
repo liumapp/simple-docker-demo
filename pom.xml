@@ -11,7 +11,7 @@
   <groupId>com.liumapp.demo.docker</groupId>
   <artifactId>simple-docker-demo</artifactId>
   <version>v1.0.0</version>
-  <packaging>jar</packaging>
+  <packaging>pom</packaging>
 
   <name>simple-docker-demo</name>
   <url>http://maven.apache.org</url>
@@ -33,6 +33,7 @@
   </developers>
 
   <modules>
+    <module>docker-weba</module>
   </modules>
 
   <dependencyManagement>
