@@ -14,3 +14,12 @@ fi
 
 mvn clean install -DskipTests -pl ${PROJECT_NAME} -am
 
+docker stop ${IMAGE_NAME}
+docker rm ${IMAGE_NAME}
+docker rmi ${IMAGE_NAME}
+
+mvn package docker:build -DskipTests -DImageName=${IMAGE_NAME} -DExposePort=${CONTAINER_PORT}
+
+docker login
+
+docker run -t -i -p ${MACHINE_PORT}:${CONTAINER_PORT} -h ${IMAGE_NAME} --name ${IMAGE_NAME} ${IMAGE_NAME}:latest
