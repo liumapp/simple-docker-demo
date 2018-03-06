@@ -4,7 +4,7 @@ PROJECT_NAME=docker-weba
 IMAGE_NAME=docker-weba
 
 MACHINE_PORT=2222
-CONTAINER_PORT=2222
+CONTAINER_PORT=8080
 
 if [ ! -d "target" ]; then
     echo 'find target folder , ready to rm'
@@ -21,6 +21,4 @@ cd ${PROJECT_NAME}
 
 mvn package docker:build -DskipTests -DImageName=${IMAGE_NAME} -DExposePort=${CONTAINER_PORT}
 
-docker login
-
-docker run -t -i -p ${MACHINE_PORT}:${CONTAINER_PORT} -h ${IMAGE_NAME} --name ${IMAGE_NAME} ${IMAGE_NAME}:latest
+docker run -t -i -d -p ${MACHINE_PORT}:${CONTAINER_PORT} -h ${IMAGE_NAME} --name ${IMAGE_NAME} ${IMAGE_NAME}:latest
