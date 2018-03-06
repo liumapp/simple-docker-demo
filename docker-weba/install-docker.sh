@@ -12,5 +12,5 @@ if [ ! -d "target" ]; then
     rm -rf "${PROJECT_NAME}/target"
 fi
 
-
+mvn clean install -DskipTests -pl ${PROJECT_NAME} -am
 
