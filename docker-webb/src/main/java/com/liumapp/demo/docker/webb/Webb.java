@@ -2,17 +2,19 @@ package com.liumapp.demo.docker.webb;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
- * Created by liumapp on 9/28/17.
+ * Created by liumapp on 3/7/18 10:27 AM.
  * E-mail:liumapp.com@gmail.com
  * home-page:http://www.liumapp.com
  */
-@SpringBootApplication(scanBasePackages = {"com.liumapp"})
-public class Main {
+@EnableDiscoveryClient
+@SpringBootApplication
+public class Webb {
 
     public static void main(String[] args) {
-        SpringApplication.run(Main.class , args);
+        SpringApplication.run(Webb.class , args);
     }
 
 }

@@ -10,12 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
  * home-page:http://www.liumapp.com
  */
 @RestController
-@RequestMapping("/")
+@RequestMapping("/a")
 public class IndexController {
 
     @GetMapping("")
     public String index () {
-        return "success";
+        return "this is web a";
     }
 
 }
