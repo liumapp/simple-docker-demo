@@ -1,2 +1,0 @@
-# Eureka-demo-client-a
-
