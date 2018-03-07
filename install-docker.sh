@@ -17,7 +17,11 @@ echo 'off'
 title=liumapp
 
 ./docker-eureka/install-docker.sh
+sleep 3
 ./docker-gateway/install-docker.sh
+sleep 3
 ./docker-config/install-docker.sh
+sleep 3
 ./docker-weba/install-docker.sh
+sleep 3
 ./docker-webb/install-docker.sh
