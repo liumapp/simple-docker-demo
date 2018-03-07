@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: demo-customer-a
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1234/eureka/
+
+server:
+  port: 8083
+

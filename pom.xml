@@ -36,6 +36,7 @@
   <modules>
     <module>docker-weba</module>
     <module>docker-webb</module>
+    <module>docker-eureka</module>
   </modules>
 
   <dependencyManagement>
