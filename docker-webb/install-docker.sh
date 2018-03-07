@@ -1,10 +1,10 @@
 #!/bin/bash
 
-PROJECT_NAME=docker-weba
-IMAGE_NAME=docker-weba
+PROJECT_NAME=docker-webb
+IMAGE_NAME=docker-webb
 
-MACHINE_PORT=8080
-CONTAINER_PORT=8080
+MACHINE_PORT=8081
+CONTAINER_PORT=8081
 
 if [ ! -d "target" ]; then
     echo 'find target folder , ready to rm'
