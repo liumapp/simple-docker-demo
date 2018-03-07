@@ -17,10 +17,10 @@ docker stop ${IMAGE_NAME}
 docker rm ${IMAGE_NAME}
 docker rmi ${IMAGE_NAME}
 
-cd ${PROJECT_NAME}
+#cd ${PROJECT_NAME}
 
 mvn package docker:build -DskipTests -DImageName=${IMAGE_NAME} -DExposePort=${CONTAINER_PORT}
 
 docker run -t -i -d -p ${MACHINE_PORT}:${CONTAINER_PORT} -h ${IMAGE_NAME} --name ${IMAGE_NAME} ${IMAGE_NAME}:latest
 
-cd ../
+#cd ../
