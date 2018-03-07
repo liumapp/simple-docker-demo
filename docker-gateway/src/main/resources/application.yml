@@ -1,6 +1,6 @@
 spring:
   application:
-    name: docker-gateway
+    name: @project.artifactId@
 
 server:
   port: 2333
