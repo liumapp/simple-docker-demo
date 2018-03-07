@@ -8,7 +8,7 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:1234/eureka/
+      defaultZone: http://service-registry:1234/eureka/
 zuul:
   routes:
     docker-weba:
