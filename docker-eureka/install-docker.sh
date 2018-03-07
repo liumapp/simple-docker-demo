@@ -1,10 +1,10 @@
 #!/bin/bash
 
-PROJECT_NAME=docker-weba
-IMAGE_NAME=docker-weba
+PROJECT_NAME=docker-eureka
+IMAGE_NAME=docker-eureka
 
-MACHINE_PORT=8080
-CONTAINER_PORT=8080
+MACHINE_PORT=1234
+CONTAINER_PORT=1234
 
 if [ ! -d "target" ]; then
     echo 'find target folder , ready to rm'
@@ -22,3 +22,5 @@ cd ${PROJECT_NAME}
 mvn package docker:build -DskipTests -DImageName=${IMAGE_NAME} -DExposePort=${CONTAINER_PORT}
 
 docker run -t -i -d -p ${MACHINE_PORT}:${CONTAINER_PORT} -h ${IMAGE_NAME} --name ${IMAGE_NAME} ${IMAGE_NAME}:latest
+
+cd ../
