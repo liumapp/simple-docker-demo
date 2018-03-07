@@ -7,7 +7,7 @@ spring:
         git:
           uri: https://github.com/liumapp/simple-docker-demo/
           search-paths: config
-
+          
 server:
   port: 7001
 
