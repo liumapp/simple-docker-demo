@@ -3,7 +3,7 @@ package com.liumapp.demo.docker.webc.entity;
 import org.springframework.stereotype.Component;
 
 /**
- * Created by liumapp on 9/28/17.
+ * Created by liumapp on 3/8/18 10:27 AM.
  * E-mail:liumapp.com@gmail.com
  * home-page:http://www.liumapp.com
  */
