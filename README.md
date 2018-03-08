@@ -38,8 +38,32 @@ A simple docker demo with Spring Boot Project .
 * docker push liumapp/docker-webc:v1.0.0
 
 * you can search liumapp/docker-webc on http://hub.docker.com
- 
- 
 
+### create a private repository
+ 
+* first of all , you need have a ecs server(CentOS) & install docker  .
 
+    for how to install and use docker in centos :
+    
+       yum install docker
+        
+       systemctl start docker
+           
+       docker run hello-world
+       
+* install registry2(named distribution in Github)
+ 
+        docker run -d -p 5000:5000 --restart=always --name registry2 registry:2
+
+* change tag of local image : 
+
+        docker images (find your image , for me , it is liumapp/docker-webc)
+        
+        docker tag liumapp/docker-webc:v1.0.0 ${your server ip}:5000/liumapp/docker-webc:v1.0.0
+        
+* push to private repository : 
+
+        docker push 118.190.133.67:5000/liumapp/docker-webc:v1.0.0
+        
+        
 
