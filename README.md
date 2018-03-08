@@ -23,3 +23,11 @@ A simple docker demo with Spring Boot Project .
 
 ### build a maven project 
 
+* cd docker-webc
+
+* mvn clean package
+
+* docker build -t demo/docker-webc:v1.0.0 .
+
+* docker run -d -p 8082:8082 demo/docker-webc:v1.0.0
+
