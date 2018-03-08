@@ -27,7 +27,19 @@ A simple docker demo with Spring Boot Project .
 
 * mvn clean package
 
-* docker build -t demo/docker-webc:v1.0.0 .
+* docker build -t liumapp/docker-webc:v1.0.0 .
 
-* docker run -d -p 8082:8082 demo/docker-webc:v1.0.0
+* docker run -d -p 8082:8082 liumapp/docker-webc:v1.0.0
+
+### push a project to docker hub
+
+* docker login (maybe you need my account access , but sorry for can not offerd)
+
+* docker push liumapp/docker-webc:v1.0.0
+
+* you can search liumapp/docker-webc on http://hub.docker.com
+ 
+ 
+
+
 
