@@ -39,6 +39,7 @@
     <module>docker-eureka</module>
     <module>docker-config</module>
     <module>docker-gateway</module>
+    <module>docker-webc</module>
   </modules>
 
   <dependencyManagement>

@@ -21,3 +21,5 @@ A simple docker demo with Spring Boot Project .
 
 * docker rmi nginx:my
 
+### build a maven project 
+
