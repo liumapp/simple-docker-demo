@@ -103,4 +103,4 @@ A simple docker demo with Spring Boot Project .
 
 ### use Docker Compose for multy project
         
-        
+* run install-docker.sh (this shell will build multy images in docker)        
