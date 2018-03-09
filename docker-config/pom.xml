@@ -43,13 +43,11 @@
       <plugin>
         <groupId>com.spotify</groupId>
         <artifactId>docker-maven-plugin</artifactId>
+        <version>1.0.0</version>
         <configuration>
-          <imageName>${ImageName}</imageName>
-          <baseImage>openjdk:8-jre-alpine</baseImage>
+          <imageName>liumapp/${project.artifactId}:${project.version}</imageName>
+          <baseImage>java:8</baseImage>
           <entryPoint>["java", "-jar", "/${project.build.finalName}.jar"]</entryPoint>
-          <exposes>
-            <expose>${ExposePort}</expose>
-          </exposes>
           <resources>
             <resource>
               <targetPath>/</targetPath>
