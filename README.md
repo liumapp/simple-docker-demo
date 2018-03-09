@@ -81,4 +81,13 @@ A simple docker demo with Spring Boot Project .
 
 * first of all , you need download and install Docker Compose (for more details , plz read : https://docs.docker.com/compose/install/ )
 
-*        
+    or you can just run ./docker/install-compose.sh , but you may get the "Operation timed out" exception . 
+    
+    in this case , you need go to https://github.com/docker/compose/releases and check the latest version of docker-compose.
+
+* use commond :
+       
+        docker-compose --version
+        
+  to check is installed .
+  
