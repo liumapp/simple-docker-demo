@@ -77,7 +77,7 @@ A simple docker demo with Spring Boot Project .
         
 * cd docker-webc & mvn clean package docker:build
         
-### use Docker Compose
+### use Docker Compose for single project
 
 * first of all , you need download and install Docker Compose (for more details , plz read : https://docs.docker.com/compose/install/ )
 
@@ -100,5 +100,8 @@ A simple docker demo with Spring Boot Project .
 * kill webd :
 
       docker-compose kill webd
+
+### use Docker Compose for multy project
+        
         
         
