@@ -40,6 +40,7 @@
     <module>docker-config</module>
     <module>docker-gateway</module>
     <module>docker-webc</module>
+    <module>docker-webd</module>
   </modules>
 
   <dependencyManagement>
