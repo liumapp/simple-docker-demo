@@ -77,7 +77,8 @@ A simple docker demo with Spring Boot Project .
         
 * cd docker-webc & mvn clean package docker:build
         
-### use maven plugin to build docker image by read Dockerfile
-        
-        
+### use Docker Compose
 
+* first of all , you need download and install Docker Compose
+
+*        
