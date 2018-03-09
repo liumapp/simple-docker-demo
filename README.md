@@ -79,6 +79,6 @@ A simple docker demo with Spring Boot Project .
         
 ### use Docker Compose
 
-* first of all , you need download and install Docker Compose
+* first of all , you need download and install Docker Compose (for more details , plz read : https://docs.docker.com/compose/install/ )
 
 *        
