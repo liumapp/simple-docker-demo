@@ -1,0 +1,29 @@
+version: '2'
+
+services:
+  eureka:
+    image: liumapp/docker-eureka:v1.0.0
+    ports:
+      - "1234:1234"
+
+  config:
+    image: liumapp/docker-config:v1.0.0
+    links:
+      - eureka:discovery
+
+  gateway:
+    image: liumapp/docker-gateway:v1.0.0
+    ports:
+      - "2333:2333"
+    links:
+      - eureka:discovery
+
+  weba:
+    image: liumapp/docker-weba:v1.0.0
+    links:
+      - eureka:discovery
+
+  webb:
+    image: liumapp/docker-webb:v1.0.0
+    links:
+      - eureka:discovery

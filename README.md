@@ -103,4 +103,8 @@ A simple docker demo with Spring Boot Project .
 
 ### use Docker Compose for multy project
         
-* run install-docker.sh (this shell will build multy images in docker)        
+* run install-docker.sh (this shell will build multy images in docker)
+        
+* maybe you need restart weba & webb
+        
+* open your browser , and visit : http://localhost:2333/docker-webb/b or http://localhost:2333/docker-weba/a        
