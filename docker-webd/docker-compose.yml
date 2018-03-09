@@ -1,0 +1,6 @@
+version: '2'
+services:
+  docker-webd:
+    build: .
+    ports:
+      - "8083:8083"
