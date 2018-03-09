@@ -61,9 +61,15 @@ A simple docker demo with Spring Boot Project .
         
         docker tag liumapp/docker-webc:v1.0.0 ${your server ip}:5000/liumapp/docker-webc:v1.0.0
         
+* config the daemon.js , if you are using mac , you need config it in docker->preferences->daemon . and the info below : 
+  
+          "insecure-registries" : [
+            "${your-server-ip}:5000"
+          ],        
+        
 * push to private repository : 
 
-        docker push 118.190.133.67:5000/liumapp/docker-webc:v1.0.0
+        docker push ${your server ip}:5000/liumapp/docker-webc:v1.0.0
         
         
 
