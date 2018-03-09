@@ -67,9 +67,17 @@ A simple docker demo with Spring Boot Project .
             "${your-server-ip}:5000"
           ],        
         
-* push to private repository : 
+* push project to private repository : 
 
         docker push ${your server ip}:5000/liumapp/docker-webc:v1.0.0
+        
+### use maven plugin to build docker image
+        
+* add maven-docker-plugin in docker-webc's pom (it should already have). 
+        
+* cd docker-webc & mvn clean package docker:build
+        
+### use maven plugin to build docker image by read Dockerfile
         
         
 
