@@ -19,7 +19,7 @@ A simple docker demo with Spring Boot Project .
 
 * docker rm d066ddb91228
 
-* docker rmi nginx:my
+* docker rmi nginx:my (to rm all container , just use : docker rm -f $(docker ps -a -q))
 
 ### build a maven project 
 
